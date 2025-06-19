@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('image/gradient-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  #game {
+    text-align: center;
+  }
+  
+  #board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  
+  #reset {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+  
+  #message {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
